@@ -1,0 +1,130 @@
+.container{
+    width: 90% !important;
+}
+body{
+    background-color: #1e202b;
+}
+/* 01 - navbar section */
+.navbar-nav {
+    width: 55%;
+}
+
+.active {
+    color: #009ad8 !important;
+    border: #009ad8 2px solid;
+    border-radius: 30px;
+    padding: 3px 30px !important;
+
+}
+
+.navbar {
+    background-color: #1e202b !important;
+}
+
+.logo-letter h1 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.logo-letter p {
+    color: #BFC1C8;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 300;
+}
+
+.navbar-toggler {
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    padding: 10px 15px !important;
+}
+
+/*  02 - track section  */
+
+.track{
+    height: 60px;
+    background-color:#262936;
+}
+.track i{
+    color: #6f7381;
+}
+.track a{
+    color: #bfc1c8 !important;
+}
+.track a:hover{
+    text-decoration:underline !important;
+}
+
+/* 03 - contactUs section */
+
+.location{
+    background-color:#262936;
+    color: #bfc1c8 ;
+}
+.location i{
+    color: #09a9db !important;
+}
+.space{
+    height: 220px;
+}
+.contact-us{
+    margin-left: 100px;
+}
+.contact{
+    margin-top: 70px;
+}
+form div div input{
+    border: solid 2px #6f6f6f !important ;
+}
+textarea{
+    min-height: 150px;
+}
+.contact-us form button{
+    background-color:#09a9db !important ;
+    border-color: transparent ;
+}
+
+/*  04 - footer section */
+
+
+footer{
+    background-color: #262936;
+}
+.footer-info form button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 10px 20px !important;
+    background-color: #009ad8 !important;
+}
+.footer-info form input{
+    background-color: #1e202b !important;
+    width: 100% ;
+    border-color: transparent;
+}
+
+.footer-icons ul li a i{
+    font-size: 20px;
+    background-color: #1e202b;
+    width: 50px;
+    height: 50px;
+    transition-duration:0.5s ;
+}
+.footer-icons ul li a i:hover{
+    background-color: #009ad8;
+    color: #fff;
+}
+footer .container .row{
+    display: flex;
+  
+}
+footer .container .row  p{
+    color:#BFC1C8 !important;
+    line-height:21px;
+    font-size:14px;
+    font-weight:300;
+    width: fit-content;
+}
+

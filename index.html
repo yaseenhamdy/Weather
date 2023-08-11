@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+  <!-- 01 - navbar section -->
+
+  <nav class="navbar navbar-expand-lg bg-transparent p-5">
+    <div class="container-fluid container">
+      <a class="navbar-brand  text-white d-flex" href="#">
+        <img src="img/logo@2x.png" alt="sky" width="64" height="38">
+        <div class="logo-letter">
+          <h1 class="mx-2">Weather</h1>
+          <p class="mx-2">tagline goes here</p>
+        </div>
+      </a>
+      <button id="nToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-around align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-white " href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-white " href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white " href="./contact.html">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- 02 - banner section -->
+  <div class="img-bunner">
+    <img class="bunner" src="img/banner.png" class="w-100" alt="buildings">
+  </div>
+  <!-- 03 -  space section -->
+  <div class="space"></div>
+
+  <!-- 04 - weather section -->
+  <div id="wStatus" class="weather w-100 position-absolute">
+    <div class="container">
+      <div class="row container">
+        <div class="col-md-12">
+          <div class="weather-input">
+            <form class="position-relative">
+              <input id="search" type="text" placeholder="Find your location" class="rounded-5 p-3">
+              <button class="btn text-white rounded-5 px-5">Find</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-4 weather-status mt-5 py-4 px-4 position-relative">
+          <div class="weather-day d-flex justify-content-between p-2 position-absolute ">
+            <div id="dayDay1" class="text-white"></div>
+            <div id="monthDay1" class="text-white"></div>
+          </div>
+          <div class="weather-degree">
+            <p id="city" class="city pt-5"></p>
+            <div class="d-flex align-items-center">
+              <p id="tempDay1" class="text-white num"></p>
+              <img id="imgDay1" src="" width="25%" height="10%" class="ms-5">
+            </div>
+            <p id="stateDay1" class="state"></p>
+            <div class="averages">
+              <span id="raining" class="me-4"></span>
+              <span id="wind" class="me-4"></span>
+              <span id="diraction" class="me-4"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 weather-status mt-5 py-4 px-4 position-relative mid">
+          <div class="weather-day d-flex justify-content-between p-2 position-absolute ">
+            <div id="dayDay2" class="text-white m-auto"></div>
+          </div>
+          <div class="weather-degree overflow-hidden">
+            <img id="imgDay2" src="" width="15%" height="10%" class="ms-auto me-auto d-block mt-5 mb-4">
+            <p id="mxTempDay2" class="mx-temp text-white text-center"></p>
+            <p id="mnTempDay2" class="min-temp text-white text-center"></p>
+            <p id="stateDay2" class="state text-center"></p>
+          </div>
+        </div>
+
+        <div class="col-md-4 weather-status mt-5 py-4 px-4 position-relative last">
+          <div class="weather-day d-flex justify-content-between p-2 position-absolute ">
+            <div id="dayDay3" class="text-white m-auto"></div>
+          </div>
+          <div class="weather-degree">
+            <img id="imgDay3" src="" width="15%" height="10%" class="ms-auto me-auto d-block mt-5 mb-4">
+            <p id="mxTempDay3" class="mx-temp text-white text-center"></p>
+            <p id="mnTempDay3" class="min-temp text-white text-center"></p>
+            <p id="stateDay3" class="state text-center"></p>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 05 - footer section -->
+
+  <footer class="pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ">
+          <div class="footer-info">
+            <form class=" position-relative">
+              <input type="email" class="rounded-5 p-3" placeholder="Enter your email...">
+              <button class="btn text-white rounded-5 ">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-icons">
+            <ul class="list-unstyled d-flex p-4 justify-content-evenly ms-5">
+              <li><a href="#"><i class="fa-brands fa-facebook-f rounded-circle pt-3 ps-3"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter rounded-circle pt-3 ps-3"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-google-plus-g rounded-circle pt-3 ps-3"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-pinterest rounded-circle pt-3 ps-3"></i></a></li>
+            </ul>
+          </div>
+
+        </div>
+        <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
